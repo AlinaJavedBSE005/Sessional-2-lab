@@ -1,12 +1,15 @@
 body > table{
-    width: 80%;
+    width: 100%;
+    background-color: rgba(80, 145, 145, 0.61);
 }
 
 table{
     border-collapse: collapse;
+    background-color: rgb(7, 137, 243);
 }
 table.list{
-    width:100%;
+    width:90%;
+    margin-left: 5%;
 }
 
 td, th {
@@ -19,24 +22,29 @@ tr:nth-child(even),table.list thead>tr {
 }
 
 input[type=text], input[type=number] {
-    width: 100%;
+    width: 70%;
     padding: 12px 20px;
-    margin: 8px 0;
+    margin: 8px 10px;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    box-shadow: darkblue;
+    margin-top: 3%;
+    margin-left: 5%;
+    
 }
 
 input[type=submit]{
-    width: 30%;
+    width: 10%;
     background-color: #ddd;
     color: #000;
-    padding: 14px 20px;
+    padding: 14px 0px;
     margin: 8px 0;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    margin-right: 20%;
 }
 
 form div.form-action-buttons{
@@ -64,4 +72,8 @@ label.validation-error{
     float: left;
     position: sticky;
     top: 0;
+    margin-left: 5%;
+    margin-top: 10%;
+    background-color: rgba(196, 168, 43, 0.842);
+    text-align: center;
 }
