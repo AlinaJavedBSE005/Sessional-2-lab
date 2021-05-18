@@ -3,7 +3,7 @@
 
 <head>
     <title>
-        users
+        Entry Page
     </title>
     <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
@@ -24,27 +24,32 @@
         </tr>`
       }
     </script>
-<body>
+<body onload='document.form1.text1.focus()'>
     <table>
         <tr>
             <td>
                 <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
                     <div>
-                        <label>username</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <label>Name</label><label class="validation-error hide" id="fullNameValidationError">field required.</label>
                         <input type="text" name="fullName" id="fullName">
                     </div>
                     <div>
                         <label>Email</label>
-                        <input type="text" name="empCode" id="empCode">
+                        <input type="text" name="empCode" id="empCode"><br>
+                        <label>confirm Email</label>
+
+                        <input type="text" name="empCode" id="empCode" onclick="ValidateEmail(document.form1.text1)"/>
                     </div>
                     <div>
                     <div  class="form-action-buttons">
-                        <input type="submit" value="Submit">
+                        <input type="submit" value="Submit" onclick="ValidateEmail(document.form1.text1)"/>
                     </div>
+
+                    
                 </form>
             </td>
             <td>
-                <table class="posts-table list table table-dark" id="list">
+                //<table class="" id="list">
                     <thead>
                       <tr>
                         <th>username</th>
